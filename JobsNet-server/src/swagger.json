@@ -1,0 +1,122 @@
+{
+    "openapi": "3.0.0",
+  
+    "info": {
+      "title": "API JobsNet - GamaAcademy",
+      "description": "API com acesso ao DB para o projeto JobsNet",
+      "version": "1.0.0"
+    },
+  
+    "servers": [
+      {
+        "url": "http://localhost:8080",
+        "description": "Ambiente de desenvolvimento"
+      }
+    ],
+  
+    "paths": {
+      "/register": {
+        "post": {
+          "summary": "Cadastro de candidato no banco de dados de vagas",
+          "description": "Rota de cadastro de usuário, recebe: CPF, Nome, Data Nascimento, Sexo, Cep, Email, Profissão e Celular",
+          "tags": ["candidato"],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "profession": {
+                      "type": "string"
+                    },
+                    "date": {
+                      "type": "string"
+                    },
+                    "maritalStatus": {
+                      "type": "string"
+                    },
+                    "gender": {
+                        "type": "string"
+                    },
+                    "address": {
+                        "type": "string"
+                    },
+                    "houseNumber": {
+                        "type": "string"
+                    },
+                    "complement": {
+                        "type": "string"
+                    },
+                    "neighborhood": {
+                        "type": "string"
+                    },
+                    "city": {
+                        "type": "string"
+                    },
+                    "cep": {
+                        "type": "string"
+                    },
+                    "federativeUnity": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "celphone": {
+                        "type": "string"
+                    },
+                    "contactPhone": {
+                        "type": "string"
+                    },
+                    "contactName": {
+                        "type": "string"
+                    },
+                    "rg": {
+                        "type": "string"
+                    },
+                    "cpf": {
+                        "type": "string"
+                    },
+                    "cnh": {
+                        "type": "string"
+                    },
+                    "cnhCategory": {
+                        "type": "string"
+                    }
+                  }
+                },
+                "examples": {
+                  "Vic": {
+                    "value": {
+                      "name": "Victória Trindade",
+                      "profession": "Analista",
+                      "date": "1997-11-05",
+                      "maritalStatus": "Solteiro",
+                      "gender": "Feminino Cis",
+                      "address": "Rua Presidente Ranieri Mazzilli",
+                      "houseNumber": "238",
+                      "complement": "",
+                      "neighborhood": "Valparaíso",
+                      "city": "Petrópolis",
+                      "cep": "25655444",
+                      "federativeUnit": "RJ",                      
+                      "email": "victoriatmallerc@gmail.com",
+                      "celphone": "00000000000",
+                      "contactPhone": "00000000000",
+                      "contactName": "Mariazinha",
+                      "rg": "123456789",
+                      "cpf": "12345678965",
+                      "cnh": "Não",
+                      "cnhCategory": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

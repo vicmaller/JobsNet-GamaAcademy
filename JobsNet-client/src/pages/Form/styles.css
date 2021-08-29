@@ -1,0 +1,87 @@
+#formpage {
+    height: 220vh;
+    background-color: #DBEFCC;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: #293524;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+
+#formpage header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    /* align-content: space-between; */
+    justify-content: space-around;
+    padding: 15px;
+    font-family: 'Lobster', cursive;
+}
+
+.app-logo {
+    max-width: 150px;    
+}
+
+#formpage main{
+    background-color: rgba(255, 255, 255, 0.733);
+    height: 100%;
+    width: 55%;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+#formpage main h1{
+    padding-top: 10px;
+    font-family: 'Popins', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    text-align: center;    
+}
+
+#formpage main form {
+    padding: 34px;
+}
+
+#formpage main form input {
+    background-color: #ffffff;
+}
+
+
+#formpage h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+#formpage legend {
+    margin-top: 15px;
+}
+
+#submitButton {
+    background-color: #334E4C;
+    height: 50px;
+    width: 180px;
+    border-radius:10px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #DBEFCC;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 8px;
+}
+
+#submitButton:hover {
+    background-color: #DBEFCC;
+    cursor: pointer;
+    color: #334E4C;
+}
+
+.form-row {
+    justify-content: space-evenly
+    
+}
